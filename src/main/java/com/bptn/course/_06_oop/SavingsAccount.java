@@ -1,0 +1,17 @@
+package com.bptn.course._06_oop;
+
+class SavingsAccount extends BankAccount {
+	
+	private double interestRate;
+	
+	public SavingsAccount(String accountNumber, double initialBalance, double interestRate) {
+		super(accountNumber, initialBalance);
+		this.interestRate = interestRate;
+	}
+	
+	public void applyInterestRate() {
+		double interest = interestRate/100 * getBalance();
+		deposit(interest);
+	}
+	
+}
