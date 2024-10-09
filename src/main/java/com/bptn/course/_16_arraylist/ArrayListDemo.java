@@ -1,4 +1,4 @@
-package com.bptn.course._16_array_list;
+package com.bptn.course._16_arraylist;
 
 import java.util.ArrayList;
 
